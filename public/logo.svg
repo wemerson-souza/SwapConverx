@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c6fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a52d5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4d0ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo arredondado -->
+  <rect width="200" height="200" rx="40" ry="40" fill="url(#bgGrad)" />
+
+  <!-- Brilho sutil no topo -->
+  <ellipse cx="100" cy="60" rx="80" ry="40" fill="rgba(255,255,255,0.08)" />
+
+  <!-- Seta esquerda para direita (topo) -->
+  <g transform="translate(100, 82) rotate(0)">
+    <line x1="-42" y1="0" x2="30" y2="0" stroke="url(#arrowGrad)" stroke-width="9" stroke-linecap="round"/>
+    <polyline points="16,-14 34,0 16,14" fill="none" stroke="url(#arrowGrad)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Seta direita para esquerda (baixo) -->
+  <g transform="translate(100, 118) rotate(180)">
+    <line x1="-42" y1="0" x2="30" y2="0" stroke="url(#arrowGrad)" stroke-width="9" stroke-linecap="round"/>
+    <polyline points="16,-14 34,0 16,14" fill="none" stroke="url(#arrowGrad)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Círculo decorativo esquerdo -->
+  <circle cx="44" cy="100" r="10" fill="rgba(255,255,255,0.15)" />
+
+  <!-- Círculo decorativo direito -->
+  <circle cx="156" cy="100" r="10" fill="rgba(255,255,255,0.15)" />
+</svg>
